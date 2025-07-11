@@ -1,0 +1,6 @@
+@HerokuTest_HostAddress = http://localhost:5177
+
+GET {{HerokuTest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
