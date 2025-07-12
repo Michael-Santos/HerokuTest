@@ -28,6 +28,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+if (isHeroku)
+{
+    var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+    app.Urls.Add($"http://*:{port}");
+}
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
