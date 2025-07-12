@@ -1,1 +1,0 @@
-web: cd HerokuTest/bin/publish/; ./HerokuTest --urls http://*:$PORT
